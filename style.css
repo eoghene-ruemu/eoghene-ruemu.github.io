@@ -1,0 +1,160 @@
+/* 🌌 Wakanda Cyber Defense Network – Master Hub Theme */
+:root {
+  --bg-1: #020617;      /* near-black navy */
+  --bg-2: #0b1120;      /* midnight blue */
+  --bg-3: #111827;      /* slate */
+  --accent-main: #38bdf8;   /* vibranium teal-blue */
+  --accent-secondary: #e879f9; /* cyber magenta */
+  --card-bg: rgba(15, 23, 42, 0.94);
+  --card-border: #1f2937;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, var(--bg-2) 0, var(--bg-1) 40%, var(--bg-3) 100%);
+  color: var(--text-main);
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+}
+
+/* CONTENT */
+.content {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 20px 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 20px 22px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: var(--accent-main);
+}
+
+.project-summary {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.project-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tags li {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  color: var(--text-muted);
+}
+
+/* LINKS */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-links a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-main);
+  color: var(--accent-main);
+}
+
+.project-links a:nth-child(2) {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.project-links a:hover {
+  filter: brightness(1.2);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px 16px 28px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer a {
+  color: var(--accent-main);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
